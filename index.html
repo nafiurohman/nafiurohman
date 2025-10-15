@@ -1,0 +1,1224 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+   <!-- Primary Meta Tags -->
+<meta name="title" content="M. Nafiurohman | Portfolio">
+<meta name="description" content="Informatics student specializing in front-end web development, UI/UX design, and Digital Enthusiast. Explore my projects and skills.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cv-nafiurohman.web.app/">
+<meta property="og:title" content="M. Nafiurohman | Portfolio">
+<meta property="og:description" content="Informatics student specializing in web development, UI/UX design, and Digital Enthusiast. Explore my projects and skills.">
+<meta property="og:image" content="https://cv-nafiurohman.web.app/foto/napik1.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://cv-nafiurohman.web.app/">
+<meta property="twitter:title" content="M. Nafiurohman | Professional Portfolio">
+<meta property="twitter:description" content="Informatics student specializing in front-end web development, UI/UX design, and Digital Enthusiast. Explore my projects and skills..">
+<meta property="twitter:image" content="https://cv-nafiurohman.web.app/foto/napik1.jpg">
+
+<!-- WhatsApp specific -->
+<meta property="og:site_name" content="M. Nafiurohman | Portfolio">
+<meta property="og:image:alt" content="M. Nafiurohman - Web Developer & Digital Enthusiast">
+
+<!-- Additional recommended tags -->
+<meta name="author" content="M. Nafiurohman">
+<meta name="keywords" content="portfolio, web developer, front-end developer, UI/UX designer, informatics student, Surabaya">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("OgQ8rYgFyjR6-Fl9w");
+  })();
+</script>
+
+    <style>
+/* Dark mode styles */
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+
+      * {
+        transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+      }
+      
+      .nav-link {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 50%;
+        background-color: #2563eb;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+      
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      
+      .nav-link:hover {
+        color: #2563eb;
+      }
+      
+      .mobile-nav-link {
+        transition: all 0.3s ease;
+        padding: 12px 16px;
+        border-radius: 12px;
+        margin: 4px 0;
+      }
+      
+      .mobile-nav-link:hover {
+        background-color: rgba(37, 99, 235, 0.1);
+        color: #2563eb;
+        transform: translateX(8px);
+      }
+      
+      .project-card {
+        transition: all 0.3s ease;
+      }
+      
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      
+      .skill-badge {
+        background-color: rgba(37, 99, 235, 0.1);
+        color: #2563eb;
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        transition: all 0.3s ease;
+      }
+      
+      .skill-badge:hover {
+        background-color: #2563eb;
+        color: white;
+        transform: translateY(-2px);
+      }
+      
+      .dark .skill-badge {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #60a5fa;
+        border-color: rgba(59, 130, 246, 0.2);
+      }
+      
+      .dark .skill-badge:hover {
+        background-color: #60a5fa;
+        color: #1e293b;
+      }
+      
+      .section-title {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .section-title::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        bottom: -8px;
+        left: 25%;
+        background: linear-gradient(90deg, #2563eb, #60a5fa);
+        border-radius: 2px;
+      }
+      
+      .hero-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .theme-toggle {
+        position: relative;
+        width: 50px;
+        height: 24px;
+        background: #e5e7eb;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      .theme-toggle.dark {
+        background: #374151;
+      }
+      
+      .theme-toggle-ball {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+      
+      .theme-toggle.dark .theme-toggle-ball {
+        transform: translateX(26px);
+        background: #1f2937;
+      }
+      
+      .theme-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        transition: all 0.3s ease;
+      }
+      
+      .theme-icon.sun {
+        left: 6px;
+        color: #fbbf24;
+      }
+      
+      .theme-icon.moon {
+        right: 6px;
+        color: #60a5fa;
+      }
+      
+      .form-input {
+        transition: all 0.3s ease;
+      }
+      
+      .form-input:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px -5px rgba(37, 99, 235, 0.2);
+      }
+      
+      .btn-primary {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-primary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+      }
+      
+      .btn-primary:hover::before {
+        left: 100%;
+      }
+      
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+      }
+      
+      .social-link {
+        transition: all 0.3s ease;
+      }
+      
+      .social-link:hover {
+        transform: translateY(-4px) scale(1.1);
+      }
+      
+      .loading-animation {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s ease forwards;
+      }
+      
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .typing-effect {
+        border-right: 2px solid #2563eb;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #2563eb }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Header -->
+    <header
+      class="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 transition-all border-b border-gray-100/20 dark:border-gray-800/20"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            src="foto/napik1.jpg"
+            alt="Profile"
+            class="w-8 h-8 rounded-full object-cover ring-2 ring-blue-500/20"
+          />
+          <span class="text-lg font-semibold text-gray-800 dark:text-white"
+            >M. NAFIUROHMAN</span
+          >
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8 text-gray-700 dark:text-gray-200">
+          <a href="#home" class="nav-link" data-i18n="home">Home</a>
+          <a href="#about" class="nav-link" data-i18n="about">About</a>
+          <a href="#portfolio" class="nav-link" data-i18n="portfolio"
+            >Portfolio</a
+          >
+          <a href="#contact" class="nav-link" data-i18n="contact">Contact</a>
+
+          <!-- Language Toggle -->
+          <div class="flex items-center gap-2">
+            <i class="fas fa-globe text-gray-600 dark:text-gray-300"></i>
+
+            <button
+              id="language-toggle"
+              class="relative inline-flex items-center h-6 rounded-full w-12 bg-gray-300 dark:bg-gray-600 transition-colors duration-300 focus:outline-none"
+            >
+              <span
+                id="toggle-ball"
+                class="absolute left-0.5 h-5 w-5 bg-white rounded-full shadow-md transform transition-transform duration-300"
+              ></span>
+              <span class="absolute left-1 text-xs font-medium text-gray-400"
+                >EN</span
+              >
+              <span
+                class="absolute right-1 text-xs font-medium text-gray-400 dark:text-gray-300"
+                >ID</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="md:hidden flex items-center space-x-4">
+
+          <button
+            id="language-toggle-mobile"
+            class="text-gray-600 dark:text-gray-300 px-3 py-1 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <span class="language-label text-sm font-medium" data-i18n="language">EN</span>
+          </button>
+
+          <button
+            id="mobile-menu-button"
+            class="text-gray-600 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden fixed inset-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-40 pt-20 px-6"
+    >
+      <div class="flex flex-col space-y-2 text-gray-700 dark:text-gray-200">
+        <a href="#home" class="mobile-nav-link" data-i18n="home">Home</a>
+        <a href="#about" class="mobile-nav-link" data-i18n="about">About</a>
+        <a href="#portfolio" class="mobile-nav-link" data-i18n="portfolio"
+          >Portfolio</a
+        >
+        <a href="#contact" class="mobile-nav-link" data-i18n="contact"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-white via-blue-50/30 to-white dark:from-gray-800 dark:via-gray-800 dark:to-gray-800"
+      >
+        <div
+          class="container mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center"
+        >
+          <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+            <h1
+              class="text-4xl md:text-5xl font-bold mb-2 text-gray-900 dark:text-white loading-animation"
+            >
+              M. NAFIUROHMAN
+            </h1>
+            <h2
+              class="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-5 font-medium loading-animation"
+              data-i18n="portfolio"
+              style="animation-delay: 0.2s"
+            >
+              Digital Enthusiast
+            </h2>
+            <p
+              class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed loading-animation"
+              data-i18n="hero_description"
+              style="animation-delay: 0.4s"
+            >
+              Informatics student at Hayam Wuruk University Perbanas Surabaya
+              passionate about digital technology, specializing in front-end web
+              development with a keen eye for design and user experience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 loading-animation" style="animation-delay: 0.6s">
+              <a
+                href="https://wa.me/6281358198565"
+                class="btn-primary text-sm text-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all flex items-center justify-center group"
+              >
+                <i class="fa-brands fa-whatsapp mr-2 group-hover:scale-110 transition-transform"></i>
+                <span data-i18n="contact_whatsapp">Contact Via WhatsApp</span>
+              </a>
+              <a
+                href="#portfolio"
+                class="text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 px-8 py-4 rounded-full transition-all flex items-center justify-center group"
+                data-i18n="view_portfolio"
+              >
+                <span class="group-hover:translate-x-1 transition-transform">View Portfolio</span>
+                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+            <div class="relative hero-animation">
+              <div
+                class="w-64 h-64 md:w-72 md:h-72 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/50 dark:to-blue-800/50 rounded-full absolute -z-10 top-4 left-4"
+              ></div>
+              <img
+                src="foto/napik1.jpg"
+                alt="M. Nafiurohman Profile Photo"
+                class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-8 border-white dark:border-gray-800 shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg z-20">
+                <i class="fas fa-code text-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        class="py-20 bg-gradient-to-br from-sky-900 via-sky-800 to-sky-900 dark:from-sky-900 dark:via-sky-800 dark:to-sky-900 rounded-[3.5rem] dark:rounded-none"
+      >
+        <div class="container mx-auto px-6 max-w-6xl">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-white section-title"
+              data-aos="fade-up"
+            >
+              <span data-i18n="about_title">About Me</span>
+            </h2>
+            <p
+              class="text-gray-300 mt-6 max-w-2xl mx-auto leading-relaxed"
+              data-i18n="about_description"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              As a 5th semester Informatics student at Hayam Wuruk Perbanas
+              University Surabaya, I combine technical expertise with creative
+              vision. My passion lies in crafting digital solutions that blend
+              functionality with aesthetic appeal, specializing in responsive
+              front-end development. My multimedia background in videography,
+              photography, and graphic design enhances my ability to create
+              compelling user experiences.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Personal Data -->
+            <div
+              class="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i
+                  class="fas fa-user text-blue-600 dark:text-blue-400 text-xl"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-semibold mb-4 text-gray-900 dark:text-white"
+                data-i18n="personal_data_title"
+              >
+                Personal Information
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    Full Name
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    M. Nafiurohman
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-700">
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    Date of Birth
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    Tuban, March 25, 2005
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-700">
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    Gender
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">Male</p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-700">
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    Religion
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">Islam</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div
+              class="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i
+                  class="fas fa-graduation-cap text-blue-600 dark:text-blue-400 text-xl"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-semibold mb-4 text-gray-900 dark:text-white"
+                data-i18n="education_title"
+              >
+                Education
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    SMK Negeri Rengel Tuban
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    <span data-i18n="multimedia">Multimedia</span> • 2020 - 2023
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-700">
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">
+                    Hayam Wuruk Perbanas University Surabaya
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    <span data-i18n="informatics">Informatics</span> • 2023 -
+                    <span data-i18n="present">Present</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+<div class="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-700/50 mt-8" data-aos="fade-up" data-aos-delay="300">
+  <div class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-lg flex items-center justify-center mb-6">
+    <i class="fas fa-certificate text-blue-600 dark:text-blue-400 text-xl"></i>
+  </div>
+  <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Certifications</h3>
+  
+  <!-- Desktop view (horizontal scroll) - shown only on md screens and up -->
+  <div class="hidden md:block overflow-x-auto pb-4">
+    <div class="flex space-x-4" style="min-width: max-content;">
+      <!-- Certification Cards -->
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Pemrograman Web</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Front-End Web</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Visualisasi Data</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Manajemen Proyek</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar AI</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Pelatihan Entrepreneur</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Future Entrepreneur Summit | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Pelatihan Public Speaking</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Future Entrepreneur Summit | 2024</p>
+      </div>
+      
+      <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 min-w-[250px] hover:scale-105 transition-all duration-300">
+        <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Python untuk Pemula</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Zillearn | 2023</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile view (stacked) - shown only on screens smaller than md -->
+  <div class="md:hidden mt-6 space-y-4">
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Pemrograman Web</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Front-End Web</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Visualisasi Data</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar Manajemen Proyek</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Dasar AI</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Dicoding | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Pelatihan Entrepreneur</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Future Entrepreneur Summit | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Pelatihan Public Speaking</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Future Entrepreneur Summit | 2024</p>
+    </div>
+    
+    <div class="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm p-4 rounded-[1.5rem] border border-gray-200/50 dark:border-gray-600/50 hover:scale-105 transition-all duration-300">
+      <h4 class="font-medium text-gray-800 dark:text-gray-200 mb-1">Belajar Python untuk Pemula</h4>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Zillearn | 2023</p>
+    </div>
+  </div>
+</div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-20 bg-gradient-to-br from-white via-gray-50/30 to-white dark:from-gray-800 dark:via-gray-800 dark:to-gray-800">
+        <div class="container mx-auto px-6 max-w-6xl">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white section-title"
+              data-aos="fade-up"
+            >
+              <span data-i18n="skills_title">Professional Skills</span>
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Technical Skills -->
+            <div
+              class="bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-600/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3
+                class="text-xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center"
+              >
+                <i
+                  class="fas fa-code text-blue-600 dark:text-blue-400 mr-3"
+                ></i>
+                <span data-i18n="technical_skills">Technical Skills</span>
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >HTML5/CSS3</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >JavaScript</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Responsive Design</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Microsoft Word</span
+                >
+                <span
+                class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                >Microsoft Excel</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Microsoft Power Point</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Google Workspace</span
+                >
+              </div>
+            </div>
+
+            <!-- Design Skills -->
+            <div
+              class="bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-600/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h3
+                class="text-xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center"
+              >
+                <i
+                  class="fas fa-paint-brush text-blue-600 dark:text-blue-400 mr-3"
+                ></i>
+                <span data-i18n="design_skills">Design Skills</span>
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >UI/UX Design</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Figma</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Adobe Photoshop</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Adobe Illustrator</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >CorelDraw</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Wireframing</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Prototyping</span
+                >
+              </div>
+            </div>
+
+            <!--video editing-->
+            <div
+              class="bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-600/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <h3
+                class="text-xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center"
+              >
+                <i
+                  class="fas fa-video text-blue-600 dark:text-blue-400 mr-3"
+                ></i>
+                <span data-i18n="video_editing">Video Editing</span>
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Adobe Premiere Pro</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Capcut</span
+                >
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div
+              class="bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm p-8 rounded-[2.4rem] shadow-xl border border-gray-100/50 dark:border-gray-600/50 hover:transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <h3
+                class="text-xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center"
+              >
+                <i
+                  class="fas fa-users text-blue-600 dark:text-blue-400 mr-3"
+                ></i>
+                <span data-i18n="soft_skills">Soft Skills</span>
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Problem Solving</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Team Collaboration</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Effective Communication</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Time Management</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Adaptability</span
+                >
+                <span
+                  class="skill-badge px-3 py-1 rounded-full text-sm font-medium"
+                  >Continuous Learning</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section
+        id="portfolio"
+        class="py-20 bg-gradient-to-br from-sky-900 via-sky-800 to-sky-900 rounded-[3rem] dark:rounded-none"
+      >
+        <div class="container mx-auto px-6 max-w-6xl">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-white section-title"
+              data-aos="fade-up"
+            >
+              <span data-i18n="portfolio_title">My Portfolio</span>
+            </h2>
+            <p
+              class="text-gray-300 mt-6 max-w-2xl mx-auto leading-relaxed"
+              data-i18n="portfolio_description"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Selected projects demonstrating my technical capabilities and
+              design approach.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="project-card bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-[2rem] overflow-hidden shadow-xl border border-gray-100/50 dark:border-gray-600/50"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="porto/lpbezn.png"
+                  alt="Bezn Studio Landing Page"
+                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+                  data-i18n="project1_title"
+                >
+                  Bezn Studio Landing Page
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed"
+                  data-i18n="project1_description"
+                >
+                  A modern, performance-optimized landing page featuring smooth
+                  scroll animations, responsive design, and conversion-focused
+                  layout for a creative studio.
+                </p>
+                <div
+                  class="w-fit h-10 px-6 flex justify-center items-center bg-sky-900 dark:bg-white rounded-t-full rounded-br-full hover:bg-sky-700 dark:hover:bg-gray-200 duration-300 shadow-md hover:shadow-lg active:scale-95 transform transition-all group"
+                >
+                  <a
+                    href="https://lp-beznstudio.web.app"
+                    class="text-white dark:text-sky-900 hover:text-gray-200 dark:hover:text-sky-700 text-sm font-medium inline-flex items-center"
+                    data-i18n="view_project"
+                  >
+                    <span
+                      class="mr-2 group-hover:translate-x-1 transition-transform duration-300"
+                      data-i18n="view_project"
+                    >
+                      View Project
+                    </span>
+                    <i
+                      class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform duration-300"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="project-card bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-[2rem] overflow-hidden shadow-xl border border-gray-100/50 dark:border-gray-600/50"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="porto/smartinvest.png"
+                  alt="SmartInvest Platform"
+                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+                  data-i18n="project2_title"
+                >
+                  SmartInvest Platform
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed"
+                  data-i18n="project2_description"
+                >
+                  Investment analysis platform implementing the Weighted Product
+                  Method (WPM) for asset selection with interactive data
+                  visualization dashboard.
+                </p>
+                <div
+                  class="w-fit h-10 px-6 flex justify-center items-center bg-sky-900 dark:bg-white rounded-t-full rounded-br-full hover:bg-sky-700 dark:hover:bg-gray-200 duration-300 shadow-md hover:shadow-lg active:scale-95 transform transition-all group"
+                >
+                  <a
+                    href="https://smartinvest.free.nf/"
+                    class="text-white dark:text-sky-900 hover:text-gray-200 dark:hover:text-sky-700 text-sm font-medium inline-flex items-center"
+                    data-i18n="view_project"
+                  >
+                    <span
+                      class="mr-2 group-hover:translate-x-1 transition-transform duration-300"
+                      data-i18n="view_project"
+                    >
+                      View Project
+                    </span>
+                    <i
+                      class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform duration-300"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="project-card bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-[2rem] overflow-hidden shadow-xl border border-gray-100/50 dark:border-gray-600/50"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="porto/uiux.png"
+                  alt="D Travelin App Design"
+                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold mb-2 text-gray-900 dark:text-white"
+                  data-i18n="project3_title"
+                >
+                  D. Travelin App Design
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed"
+                  data-i18n="project3_description"
+                >
+                  Comprehensive travel application UI/UX design with
+                  user-centered approach, featuring intuitive navigation and
+                  personalized recommendation system.
+                </p>
+                <div
+                  class="w-fit h-10 px-6 flex justify-center items-center bg-sky-900 dark:bg-white rounded-t-full rounded-br-full hover:bg-sky-700 dark:hover:bg-gray-200 duration-300 shadow-md hover:shadow-lg active:scale-95 transform transition-all group"
+                >
+                  <a
+                    href="https://www.figma.com/proto/2NUpRw144Wyj8ezPJepPgH/PROJEK-UAS--D.-TRAVEL-IN-?node-id=28-284&t=xawPtbR0k6J0tHYB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2"
+                    class="text-white dark:text-sky-900 hover:text-gray-200 dark:hover:text-sky-700 text-sm font-medium inline-flex items-center"
+                    data-i18n="view_project"
+                  >
+                    <span
+                      class="mr-2 group-hover:translate-x-1 transition-transform duration-300"
+                      data-i18n="view_project"
+                    >
+                      View Project
+                    </span>
+                    <i
+                      class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform duration-300"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white section-title"
+              data-aos="fade-up"
+            >
+              <span data-i18n="contact_title">Get In Touch</span>
+            </h2>
+            <p
+              class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Interested in collaboration or have questions? I'd love to hear
+              from you!
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-700 rounded-[2.4rem] shadow-sm border border-gray-100 dark:border-gray-600 p-8 md:p-10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3
+                  class="text-xl font-semibold mb-4 text-gray-900 dark:text-white"
+                  data-i18n="contact_info"
+                >
+                  Contact Information
+                </h3>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-envelope text-blue-600 dark:text-blue-400 mt-1 mr-3"
+                    ></i>
+                    <a
+                      href="mailto:nafiurohman25@gmail.com"
+                      class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      nafiurohman25@gmail.com
+                    </a>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-phone-alt text-blue-600 dark:text-blue-400 mt-1 mr-3"
+                    ></i>
+                    <a
+                      href="https://wa.me/6281358198565"
+                      class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      +62 813-5819-8565
+                    </a>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-map-marker-alt text-blue-600 dark:text-blue-400 mt-1 mr-3"
+                    ></i>
+                    <span class="text-gray-600 dark:text-gray-300">
+                      Tuban - Surabaya, Indonesia
+                    </span>
+                  </li>
+                </ul>
+
+                <div class="mt-8">
+                  <h4
+                    class="text-lg font-medium mb-4 text-gray-900 dark:text-white"
+                    data-i18n="connect_with_me"
+                  >
+                    Connect With Me
+                  </h4>
+                  <div class="flex space-x-4">
+                    <a
+                      href="https://www.linkedin.com/in/m-nafiurohman-b93a09288/"
+                      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="https://github.com/NAFIUROHMAN"
+                      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/mnapikk/"
+                      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://web.facebook.com/napik.napik.7121"
+                      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                    <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://wa.me/6281358198565"
+                      class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <i class="fa-brands fa-whatsapp mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <form id="whatsappForm" class="space-y-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                      data-i18n="name_label"
+                    >
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-b-full rounded-tr-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                      data-i18n="email_label"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-b-full rounded-tr-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                    >
+                      WhatsApp Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-b-full rounded-tr-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                      placeholder="+62 812-3456-7890"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                      data-i18n="message_label"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-b-[2rem] rounded-tr-[2rem] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full transition-colors"
+                  ><i class="fa-brands fa-whatsapp mr-2"></i>
+                    <span data-i18n="send_message">Send via WhatsApp</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-50 dark:bg-gray-700 py-8 border-t border-gray-200 dark:border-gray-600"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-600 dark:text-gray-300 text-sm">
+          &copy; <span id="current-year">2024</span> M. Nafiurohman.
+          <span data-i18n="rights_reserved">All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
